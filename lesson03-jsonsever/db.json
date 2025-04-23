@@ -1,0 +1,86 @@
+{
+  "users": [
+    {
+      "id": "US001",
+      "userName": "MindX"
+    },
+    {
+      "id": "US002",
+      "useName": "Nobi Nobita"
+    },
+    {
+      "id": "US003",
+      "useName": "Ronaldo"
+    },
+    {
+      "id": "US004",
+      "useName": "Messi"
+    },
+    {
+      "id": "US005",
+      "userName": "Nguyen Van A"
+    },
+    {
+      "id": "US006",
+      "userName": "Nguyen Van B"
+    }
+  ],
+  "posts": [
+    {
+      "id": "PS001",
+      "content": "Nội dung học về JSON Server!",
+      "userId": "US001",
+      "views": 100
+    },
+    {
+      "id": "PS002",
+      "content": "Learning Frontend courses",
+      "userId": "US004",
+      "views": 200
+    },
+    {
+      "id": "PS003",
+      "content": "Learning Java",
+      "userId": "US003",
+      "views": 120
+    },
+    {
+      "id": "PS004",
+      "content": "Learning AI courses",
+      "userId": "US003",
+      "views": 37
+    },
+    {
+      "id": "PS005",
+      "content": "Learning Agile/Scrum",
+      "userId": "US002",
+      "views": 50
+    },
+    {
+      "views": 101,
+      "content": "Learning JWT 20 April 2025",
+      "userId": "US001",
+      "id": "PS006"
+    },
+    {
+      "id": "PS007",
+      "content": "Learning NodeJS",
+      "userId": "US002",
+      "views": 115
+    }
+  ],
+  "comments": [
+    {
+      "id": "CMT001",
+      "postId": "PS001",
+      "content": "Bài học này rất ý nghĩa! Cảm ơn MindX!",
+      "userId": "US002"
+    },
+    {
+      "id": "CMT001",
+      "postId": "PS002",
+      "content": "Bài học này rất ý nghĩa!",
+      "userId": "US004"
+    }
+  ]
+}

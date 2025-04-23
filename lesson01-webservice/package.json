@@ -1,0 +1,13 @@
+{
+  "name": "lesson01-webservice",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "Nguyen Trong Tien",
+  "license": "ISC"
+}
