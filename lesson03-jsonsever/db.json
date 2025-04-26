@@ -23,14 +23,18 @@
     {
       "id": "US006",
       "userName": "Nguyen Van B"
+    },
+    {
+      "id": "US9f8efc4e-2393-4a1c-922d-c2f73f8b2900",
+      "userName": "Trọng Tiến"
     }
   ],
   "posts": [
     {
       "id": "PS001",
-      "content": "Nội dung học về JSON Server!",
-      "userId": "US001",
-      "views": 100
+      "content": "Hiiii",
+      "userId": "US002",
+      "views": 200
     },
     {
       "id": "PS002",
@@ -57,30 +61,54 @@
       "views": 50
     },
     {
+      "id": "PS006",
       "views": 101,
       "content": "Learning JWT 20 April 2025",
-      "userId": "US001",
-      "id": "PS006"
+      "userId": "US001"
     },
     {
       "id": "PS007",
       "content": "Learning NodeJS",
       "userId": "US002",
       "views": 115
+    },
+    {
+      "id": "PS3c1eca62-74bc-4dfa-841c-6ce043795d71",
+      "content": "Hiiii",
+      "userId": "US001",
+      "views": 0
     }
   ],
   "comments": [
     {
       "id": "CMT001",
       "postId": "PS001",
-      "content": "Bài học này rất ý nghĩa! Cảm ơn MindX!",
-      "userId": "US002"
+      "userId": "US002",
+      "content": "hmmm"
     },
     {
       "id": "CMT001",
       "postId": "PS002",
       "content": "Bài học này rất ý nghĩa!",
       "userId": "US004"
+    },
+    {
+      "id": "CMTe07b1fe5-9039-4db8-bc70-eaf6dc4db4f5",
+      "postId": "PS001",
+      "userId": "US002",
+      "content": "Hiiii"
+    },
+    {
+      "id": "CMT1e1c38b3-bd9b-4b10-a8f1-d81418f6df2b",
+      "postId": "PS001",
+      "userId": "US002",
+      "content": "Hiiii"
+    },
+    {
+      "id": "CMTb18d1eae-9dc0-48b2-bed1-fbbf158b03cd",
+      "postId": "PS001",
+      "userId": "US005",
+      "content": "Hiiii"
     }
   ]
 }
