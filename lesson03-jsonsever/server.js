@@ -1,4 +1,3 @@
-import e from "express";
 import express from "express";
 import fetch from "node-fetch";
 import { v4 as uuidv4 } from "uuid";
@@ -11,17 +10,6 @@ const jsonSever_endpoint = "http://localhost:8081";
 
 app.get("/", (req, res) => {
   res.send("Welcome to our Server lesson 03");
-});
-
-// Get all users
-app.get("/users", async (req, res) => {
-  try {
-    const jsonObj = await fetch(`${jsonSever_endpoint}/users`);
-    const data = await jsonObj.json();
-    res.json(data);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
 });
 
 // 1. Viết API việc đăng ký user với userName, id sẽ được là một string ngẫu nhiên, không được phép trùng, bắt đầu từ ký tự US (ví dụ: US8823).
@@ -63,9 +51,8 @@ app.post("/users", async (req, res) => {
 });
 
 // 2. Viết API cho phép user tạo bài post (thêm bài post, xử lý id tương tự user).
-app.post("/posts/:userId", async (req, res) => {
-  const userId = req.params.userId;
-  const { content } = req.body;
+app.post("/posts", async (req, res) => {
+  const { userId, content } = req.body;
 
   try {
     if (!content || !userId) {
@@ -306,6 +293,7 @@ app.get("/posts/:postId/comments", async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 });
+
 // Server listening
 app.listen(PORT, () => {
   console.log(`Server is running at PORT ${PORT}`);
