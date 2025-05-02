@@ -4,7 +4,7 @@ import usersController from "./controllers/users.js";
 import postsController from "./controllers/posts.js";
 import commentsController from "./controllers/comments.js";
 
-const PORT = 8080;
+const PORT = 8081;
 const DB_URL = "mongodb://localhost:27017/lesson04";
 
 mongoose.connect(DB_URL);
