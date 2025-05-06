@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Collection from ".././database/collection.js";
+import Collection from "../database/collection.js";
 
 const commentSchema = new mongoose.Schema({
   postId: {

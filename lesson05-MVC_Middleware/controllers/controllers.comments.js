@@ -1,6 +1,6 @@
-import UsersModel from "../models/users.js";
-import PostsModel from "../models/posts.js";
-import CommentsModel from "../models/comments.js";
+import UsersModel from "../models/models.users.js";
+import PostsModel from "../models/models.posts.js";
+import CommentsModel from "../models/models.comments.js";
 
 const commentsController = {
   createNewComment: async (req, res) => {
@@ -37,9 +37,24 @@ const commentsController = {
         message: "Create post successful!",
         success: true,
       });
-    } catch (error) {
+    } catch (err) {
+      if (err.name === "ValidationError") {
+        const errors = {};
+        for (const key in err.errors) {
+          errors[key] = err.errors[key].message;
+        }
+
+        return res.status(400).json({
+          status: 400,
+          error: "ValidationError",
+          message: "Validation failed",
+          details: errors,
+          success: false,
+        });
+      }
+
       res.status(403).send({
-        message: error.message,
+        message: err.message,
         data: null,
         success: false,
       });
